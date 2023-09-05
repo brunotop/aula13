@@ -1,0 +1,131 @@
+// exemplo1
+/*let condicao1 = true
+
+if (condicao1){
+    //como o valor da condicao é true
+    //o codigo desse bloco é executado
+    console.log('entrei no if 1!');
+}
+
+let condicao2 = false
+
+if (condicao2){
+    //como o valor da condicao é false
+    //o codigo desse bloco nao é executado
+    console.log('Entrei no if 2!')
+}
+
+//exercicio 1
+function numero(num1, num2){
+    result = num1 === num2
+    if (result)
+    return("sao iguais");
+}
+console.log(numero(Number(prompt("Primeiro numero")), Number(prompt("Segundo numero"))));
+
+function recebeDoisnumeros(num1, num2){
+    if(num1 === num2){
+        return "Sucesso";
+    }
+}
+console.log(recebeDoisnumeros(Number(prompt("Digite um numero")), Number(prompt(("Digite outro numero")))));
+
+//exercicio 2
+function coisa(nome, idade){
+    if (idade >=18){
+        return nome + ", Voce pode dirigir";
+    }
+}
+console.log(coisa(
+    prompt("Seu nome"), Number(prompt("Sua idade"))
+    ));
+
+//exemplo 2 
+let condicao = false
+
+if (condicao){
+    console.log("Entrei no if")
+} else {
+    //como o valor da condicao é false,
+    //o codigo do bloco else será executado
+    console.log('Entrei no else!')
+}
+//exercicio 3
+function numero(num1, num2){
+    result = num1 === num2
+    if (result){
+    return("sao iguais")
+    }else {  return "Nao sao iguais";
+    }
+}
+console.log(numero(Number(prompt("Primeiro numero")), Number(prompt("Segundo numero"))));
+
+//exemplo 3
+let condicao1 = false
+let condicao2 = true
+
+if (condicao1){
+    console.log('Entrei no if 1!')
+} else {
+    //como o valor da condicao1 é false
+    //o codigo do else sera executado
+    if (condicao2) {
+        //como o valor da condicao2 é true
+        //executamos esse codigo
+        console.log('Entrei no if 2!')
+    }
+}
+
+function numero(num1, num2){
+    result = num1 === num2
+    if (result){
+    }else if (num1 > num2){
+    return("O primeiro valor é maior que segundo valor")
+    } 
+        else if (num1 < num2){
+    return("O primeiro valor é menor que o segundo valor ")
+    }
+};
+console.log(numero(Number(prompt("Primeiro numero")), Number(prompt("Segundo numero"))));
+
+let paisdeOrigem = 'brasil'
+switch (paisdeOrigem){
+    case 'brasil':
+        console.log("brasileiro");
+        break
+    case 'EUA':
+        console.log('norte americano');
+        break
+    case 'inglaterra':
+        console.log('ingles');
+        break
+    default:
+        console.log('nacionalidade nao encontrada');
+        break
+};
+
+// exercicio 5
+let pokemon = prompt("Escolha um pokemon, entre eles o bulbasauro, charmander e squirtle")
+switch (pokemon){
+    case 'Bulbasauro':
+        console.log("planta e veneno");
+        break
+    case 'charmander':
+        console.log('fogo');
+        break
+    case 'squirtle':
+        console.log('agua');
+        break
+    default:
+        console.log('pokemon nao encontrado');
+        break
+};
+*/
+//exercicio 6
+function podeEstudarNaFaculdade(ensinomedio, idade, cursandofaculdade){
+    if(ensinomedio == "sim" && idade >= 18 && cursandofaculdade == "nao"){
+        return "Pode estudar na faculdade";
+    }else { return "Nao pode estudar na faculdade"; }
+}
+console.log(podeEstudarNaFaculdade(prompt("Conclui o ensino medio?").toLocaleLowerCase(),
+Number(prompt("sua idade")),prompt("Esta cursando outra faculdade?").toLocaleLowerCase()));
